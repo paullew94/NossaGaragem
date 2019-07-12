@@ -32,6 +32,17 @@
         </tr>
     </tfoot>
     <tbody>
+        @foreach(Model.Veiculo veiculo in ViewBag.Veiculos)
+        {
+        <tr>
+            <td>@veiculo.Id</td>
+            <td>@veiculo.Categoria.Nome</td>
+            <td>@veiculo.Modelo</td>
+            <td>@veiculo.Valor</td>
+        </tr>
+
+        }
+        
 
     </tbody>
 </table>
